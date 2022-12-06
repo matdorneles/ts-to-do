@@ -6,16 +6,14 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model Task {
-  id Int @id @default(autoincrement())
+  id String @id @default(auto()) @map("_id") @db.ObjectId
   title String
-  body String?
-  FinishedAt DateTime?
-  CreatedAt DateTime @default(now())
-
-  @@map("tasks")
+  body String
+  createdAt DateTime @default(now())
+  updatedAt DateTime?
 }

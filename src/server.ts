@@ -7,7 +7,6 @@ import { router } from "./routes";
 const app = express();
 
 dotenv.config();
-console.log(process.env);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     if(err instanceof Error) {
