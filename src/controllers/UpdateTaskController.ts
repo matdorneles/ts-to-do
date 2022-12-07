@@ -9,7 +9,7 @@ class UpdateTaskController {
 
     const task = await updateTaskService.execute({ id, title, body });
 
-    return task;
+    return res.status(200).json(task);
   }
 }
 
