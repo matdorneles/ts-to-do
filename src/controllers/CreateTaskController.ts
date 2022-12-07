@@ -6,7 +6,7 @@ class CreateTaskController {
         const { title, body } = req.body;
 
         const createTask = new CreateTaskService();
-        const task = createTask.execute({ title, body });
+        const task = await createTask.execute({ title, body });
 
         return res.status(201).json(task);
     }
