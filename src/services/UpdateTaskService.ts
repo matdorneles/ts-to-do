@@ -19,7 +19,12 @@ class UpdateTaskService {
       }
     });
 
-    if(!task) throw new Error("Update failed");
+    if(!task) {
+      throw new Error("Update failed")
+
+    } else if(task.status === 'Finalizado') {
+      throw new Error("Can not edit a finished task")
+    };
 
     return task;
   }
