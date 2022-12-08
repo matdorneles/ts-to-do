@@ -3,13 +3,13 @@ import prisma from "../prisma";
 interface TaskRequest {
   id: string;
   title: string;
-  body: string;
+  body: string
 }
 
 class UpdateTaskService {
   async execute({id, title, body }: TaskRequest) {
 
-    const task = await prisma.task.update({
+    const task = await prisma.tasks.update({
       where: {
         id: id
       }, data: {

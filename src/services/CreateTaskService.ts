@@ -7,7 +7,7 @@ interface TaskRequest {
 
 class CreateTaskService {
     async execute({ title, body }: TaskRequest) {
-       const task = await prisma.task.create({
+       const task = await prisma.tasks.create({
         data: {
             title: title,
             body: body

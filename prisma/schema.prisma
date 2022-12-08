@@ -10,10 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Task {
+model Tasks {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   title String
   body String
+  status String @default("Novo")
   createdAt DateTime @default(now())
   updatedAt DateTime?
 }
