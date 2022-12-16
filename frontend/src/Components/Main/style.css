@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+
+.main-tasks {
+  padding: 5px;
+  color: white;
+  background-color: gray;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  list-style: none;
+  border-style: solid;
+  border-radius: 10px;
+  width: auto;
+}
+
+.main-tasks_title {
+  grid-column: span 2;
+}
+
+.main-tasks_body {
+  grid-column: span 2;
+}
+
+.main-tasks_status {
+  background-color: green;
+  padding: 5px;
+}

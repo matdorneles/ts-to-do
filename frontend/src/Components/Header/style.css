@@ -1,0 +1,21 @@
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 5vh;
+  margin: 0;
+}
+
+.header-title {
+  color: #5fcc28;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title i {
+  margin-right: 10px;
+}
