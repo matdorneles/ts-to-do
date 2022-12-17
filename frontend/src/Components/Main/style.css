@@ -9,6 +9,7 @@
   padding: 5px;
   color: white;
   background-color: gray;
+  font-size: large;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -20,10 +21,13 @@
   list-style: none;
   border-style: solid;
   border-radius: 10px;
-  width: auto;
+  height: auto;
+  width: 270px;
 }
 
 .main-tasks_title {
+  font-weight: bold;
+  text-decoration: underline;
   grid-column: span 2;
 }
 

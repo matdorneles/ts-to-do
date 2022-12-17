@@ -21,6 +21,12 @@ function Main() {
       title: "Teste 3",
       body: "Testando o teste número 3",
       status: "Finalizado"
+    },
+    {
+      id: 4,
+      title: "Teste 4",
+      body: "Testando o teste número 4",
+      status: "Cancelado"
     }
   ]
 
